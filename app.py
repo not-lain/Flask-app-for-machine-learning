@@ -43,9 +43,9 @@ def intro():
             # predicting the charges
             pred = model.predict(X)[0]
             # open the template using the variables
-            return render_template('animatedlogin.html', pred=str(pred))
+            return render_template('base.html', pred=str(pred))
     # the template in initial state
-    return render_template('animatedlogin.html')
+    return render_template('base.html')
 
 
 
