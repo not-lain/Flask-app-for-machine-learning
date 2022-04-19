@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Animated Login</title>
+
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='temp.css')}}">
+
+</head>
+
+<body>
+    <form method="POST" class="box" action="/" method="post">
+        <h1>predict</h1>
+        <input type="text" name="age" placeholder="age" required type="number" step="any" />
+        <input type="text" name="sex" placeholder="sex" required step="any" />
+        <input type="text" name="bmi" placeholder="bmi" required type="number" step="any" />
+        <input type="text" name="children" placeholder="children" required type="number" step="any" />
+        <input type="text" name="smoker" placeholder="smoker" step="any" />
+        <input type="text" name="region" placeholder="region" required type="number" step="any" />
+        <a href="{{ url_for('intro') }}" method="POSt" action="submit">
+
+            <input type="submit" name="Login" value="predict" />
+        </a>
+
+        {% if pred %}
+        <p style="color:#3498db">predicted charges : {{ pred }}</p>
+        {% endif %}
+    </form>
+
+
+
+</body>
+
+</html>
