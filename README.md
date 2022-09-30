@@ -4,4 +4,5 @@
 
 * open cmd
 * cd into the working directory
-* run : `python app.py`in your terminal
+* run : `python app.py`  
+* enjoy :)
