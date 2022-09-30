@@ -18,7 +18,7 @@ model = load('./model.pickel')
 # flask app 
 
 
-# to run this program open your CMD.exe and cd into the folder 
+# to run this program open your cmd.exe and cd into the folder 
 # type in your cmd :   python app.exe     
 # open your browser and open 127.0.0.1:5000
 
